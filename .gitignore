@@ -3,7 +3,6 @@ test.sh
 .luarc.json
 
 spell/
-lazy-lock.json
 go
 .wrangler
 wslu
