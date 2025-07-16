@@ -6,3 +6,5 @@ spell/
 go
 .wrangler
 wslu
+uv
+fish
