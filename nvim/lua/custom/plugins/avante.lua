@@ -14,7 +14,7 @@ return {
         timeout = 30000, -- Timeout in milliseconds
         temperature = 0,
         max_tokens = 4096,
-        disable_tools = true, -- disable tools!
+        -- disable_tools = true, -- disable tools!
       },
       openai = {
         endpoint = "https://api.openai.com/v1",
