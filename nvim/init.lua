@@ -1,4 +1,6 @@
-require "custom.set"
+require "set"
+require "lazy-init"
+
 -- NOTE: Here is where you install your plugins.
 require("lazy").setup({
   -- NOTE: Plugins can be added with a link (or for a github repo: 'owner/repo' link).
@@ -755,16 +757,16 @@ require("lazy").setup({
   --  Uncomment any of the lines below to enable them (you will need to restart nvim).
   --
   --
-  require "custom.plugins.render-markdown",
-  require "custom.plugins.nui",
-  require "custom.plugins.dressing",
-  require "custom.plugins.avante",
-  require "kickstart.plugins.debug",
+  require "plugins.render-markdown",
+  require "plugins.nui",
+  require "plugins.dressing",
+  require "plugins.avante",
+  require "plugins.debug",
   -- require "kickstart.plugins.lint",
-  require "kickstart.plugins.autopairs",
-  require "kickstart.plugins.gitsigns", -- adds gitsigns recommend keymaps
-  require "kickstart.plugins.indent_line",
-  require "kickstart.plugins.neo-tree",
+  require "plugins.autopairs",
+  require "plugins.gitsigns", -- adds gitsigns recommend keymaps
+  require "plugins.indent_line",
+  require "plugins.neo-tree",
 
   -- NOTE: The import below can autonmatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.
@@ -799,6 +801,6 @@ require("lazy").setup({
 })
 -- catppuccin
 vim.cmd.colorscheme "catppuccin"
-require "custom.plugins"
+require "plugins"
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
